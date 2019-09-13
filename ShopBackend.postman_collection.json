@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "84a82c54-f1e8-4ae5-978c-1872d304951c",
+		"name": "ShopBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Setting",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/setting",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"khamphee7.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shop",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxMDQ3ODksImV4cCI6MTU2ODUzNjc4OX0.b_NQPM1b0s8SdluVDVsmtc_F2FoyXysAy21lAVofh3w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/shop",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxMDQ3ODksImV4cCI6MTU2ODUzNjc4OX0.b_NQPM1b0s8SdluVDVsmtc_F2FoyXysAy21lAVofh3w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/shop/menu",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shop",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getShopWithMenu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxMDQ3ODksImV4cCI6MTU2ODUzNjc4OX0.b_NQPM1b0s8SdluVDVsmtc_F2FoyXysAy21lAVofh3w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/shop/5d53b8dabb8d365b8073d1ae",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shop",
+						"5d53b8dabb8d365b8073d1ae"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addShop",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxMDQ3ODksImV4cCI6MTU2ODUzNjc4OX0.b_NQPM1b0s8SdluVDVsmtc_F2FoyXysAy21lAVofh3w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"new shop 3\",\n    \"photo\": \"30.png\",\n    \"location\": {\n        \"lat\": 3.2364381,\n        \"lgn\": 3.8529173\n    }\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/shop",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User me",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxODkyNzYsImV4cCI6MTU2ODYyMTI3Nn0.QduTWZeHxeQRBijnnieHhYxUfcR0FeeqCmJidDVQf3M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/me",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User me Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNzc0OWYzOTJjYTRmNDdhODkwOGZjYyIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE1NjgxODkyNzYsImV4cCI6MTU2ODYyMTI3Nn0.QduTWZeHxeQRBijnnieHhYxUfcR0FeeqCmJidDVQf3M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Khamphees1\",\n\t\"email\" : \"khamphee.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "{{HEROKU}}/api/users/me",
+					"host": [
+						"{{HEROKU}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Heroku",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"khamphee7.s@g-able.com\",\n\t\"password\" : \"123456\"\n}\n"
+				},
+				"url": {
+					"raw": "https://shopbackend25620911.herokuapp.com/api/users/login",
+					"protocol": "https",
+					"host": [
+						"shopbackend25620911",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
